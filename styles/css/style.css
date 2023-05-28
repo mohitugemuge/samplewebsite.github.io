@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+}
+
+.menu li{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.menu {
+    position: absolute;
+    right: 0 ;
+}
+
+.nav-item a img{
+
+    height:20px ; 
+    width:auto;
+    padding: 0 4px;
+    margin-bottom: 5px;
+
+}
+
+.nav-item a sup{
+    font-size: 9px;
+    font-weight: bold;
+
+}
+
+nav{
+    box-shadow: 0 5px 10px -4px  rgb(199, 198, 198);
+    margin-bottom: 50px;
+}
+
+.features ul li{
+    display: inline-flex ;
+    list-style-type: none;
+    padding: 0 10px;
+    color: #707480;
+}
+
+.bottom-border span::after{
+position: absolute;
+content: "";
+left: 0;
+right: 0;
+top: 38px;
+height: 1px;
+width: 110px;
+background: black;
+box-sizing: inherit;
+}
+.features ul li img{
+    height: 30px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 8px;
+    margin-top: -3px;
+}
+
+.card img{
+    height: 160px;
+    width: 250px;
+}
+
+.card::after{
+    position: absolute;
+    content: "PROMOTED";
+    height: 25px;
+    width: 90px;
+    background-color: rgb(73, 72, 72);
+    color: white;
+    padding: 4px;
+    font-size: small;
+}
+
+/* .card::before{
+    position: absolute;
+    content: "";
+    bottom: 321px;
+    border-width: 9px 0 0 9px;
+    border-style: solid;
+    border-color: rgb(73, 72, 72);
+   
+    right: 0;
+    background-color: #707480;
+    height: 0;
+    width: 0;
+} */
+.food-card{
+    flex-direction: column;
+}
+
+.small{
+    font-size: 13px !important;
+}
+
+.food-card:hover {
+    border: 1px solid rgb(216, 208, 208);
+    box-shadow: 0 -1px 10px rgb(214, 210, 210);
+
+}
+
+.food-card:hover .d-none{
+    display: block !important;
+}
+
+.food-card:hover .display-border{
+    border-bottom: 1px solid  rgb(216, 208, 208);
+}
+
+/* footer */
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
